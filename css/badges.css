@@ -1,0 +1,237 @@
+.content{
+    background-color:white;
+    color: #D22C35;
+    height: fit-content;
+    padding: 3%;
+}
+
+article, .article{
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+article div, .article div{
+    margin-left: 3%;
+}
+
+.content h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content h2{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content h3{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.content pre{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+.createBadge{
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+}
+
+.createBadge input{
+    font-family: 'Raleway', sans-serif;
+    width: 93%;
+    padding: 3%;
+}
+
+.createBadge textArea{
+    font-family: 'Raleway', sans-serif;
+    resize: none;
+    width: 93%;
+    padding: 3%;
+}
+
+.createBadge input[type="submit"]{
+    background-color: #D22C35;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.createBadge input[type="submit"]:hover{
+    background-color: #8A1C21;
+}
+
+.editBadge{
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.editBadge div{
+    margin-left: 2%;
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+}
+
+.editBadge h3{
+    margin-bottom: 2%;
+}
+
+.editBadge input[type="text"], .editBadge textArea{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: grey;
+    padding: 3%;
+    resize: none;
+}
+
+.editBadge input[type="text"]:focus, .editBadge textArea:focus{
+    font-style:normal;
+    color: black;
+}
+
+.editBadge input[type="submit"]{
+    padding: 4%;
+    background-color: #22629C;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+    font-weight: bold;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s;
+}
+
+.editBadge input[type="submit"]:hover{
+    background-color: #10304e;
+}
+
+.content button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 1%;
+    background-color: #22629C;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.content button:hover{
+    background-color: #10304e;
+}
+
+@media only screen and (min-width: 768px){
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+    }
+
+    article, .article{
+        margin-bottom: 3%;
+    }
+
+    .img{
+        width: 15%;
+        height: 15%;
+        transition: 2s;
+    }
+
+    .img:hover{
+        width: 17%;
+        height: 17%;
+    }
+
+    .createBadge{
+        align-items: center;
+    }
+
+    .createBadge input[type="submit"]{
+        width: 20%;
+        padding: 1%;
+    }
+
+    .editBadge div{
+        margin-bottom: 5%;
+    }
+
+    .editBadge textArea{
+        width: 200%;
+    }
+
+    .content button{
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        padding-top: 20%;
+    }
+
+    article, .article{
+        margin-bottom: 8%;
+    }
+
+    .content h1{
+        text-align: center;
+    }
+    
+    .content pre{
+        font-size: 80%;
+    }
+
+    .img{
+        width: 40%;
+        height: 40%;
+    }
+
+    
+    .newBadge{
+        text-align: center;
+    }
+
+    .createBadge input[type="submit"]{
+        padding: 3%;
+        width: 100%;
+    }
+
+
+    .editBadge{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        flex-direction: column;
+    }
+
+    .editBadge div{
+        float: left;
+    }
+
+    .editBadge input[type="submit"]{
+        width: 100%;
+    }
+
+    .content button{
+        position: absolute;
+        right: 10%;
+        padding: 4%;
+    }
+}

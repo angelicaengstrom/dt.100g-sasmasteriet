@@ -1,0 +1,59 @@
+.content{
+    background-color:white;
+    color: #D22C35;
+    height: fit-content;
+    padding: 3%;
+}
+
+.content h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content h3{
+    
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content button{
+    background-color:#D22C35;
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.content button:hover{
+    background-color: #8A1C21;
+}
+
+@media only screen and (min-width: 768px){
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+    }
+
+    .content button{
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        padding-top: 20%;
+    }
+
+    .content button{
+        font-size: 100%;
+        padding: 4%;
+        width: 100%;
+    }
+
+    .content input{
+        width: 92%;
+        padding: 4%;
+    }
+}

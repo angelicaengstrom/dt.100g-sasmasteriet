@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html, body{
+    height: 100%;
+}
+
+html, body, header{
+    width: 100%;
+}
+
+body, header, .menuContent li:hover, .cancelMenuBtn, .header{
+    background-color: #22629C;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+footer nav a, footer nav p, .nav a, .nav p{
+    margin: 1%;
+}
+
+header, .header{
+    height: 10%;
+    padding: 1%;
+    color: white;
+    position: fixed;
+    top: 0px;
+    justify-content: space-between;
+}
+
+header, header .banner, header .menuBtn, footer nav, .header, .header .banner, .header .menuBtn, .footer .nav{
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+
+header .logo, .header .logo{
+    cursor: pointer;
+    margin-left: 1%;
+    max-width: 400px;
+}
+
+header h1, .header h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+}
+
+header .menuBtn, .header .menuBtn{
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 140%;
+}
+
+.cancelMenuBtn{
+    border-bottom: none;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    text-align: right;
+    margin:0%;
+}
+
+.menuContent{
+    position: fixed;
+    display: none;
+    background-color: #10304e;
+}
+
+.show {
+    display: block;
+}
+
+.menuicon, .menuContent .fa{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.menuContent ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+.menuContent li{
+    border-bottom: solid 2px #22629C;
+    transition: 2s;
+    padding: 3%;
+}
+
+.menuContent a{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-size: 130%;
+}
+
+footer nav, .footer .nav{
+    margin-top: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a, nav p, .nav a, .nav p{
+    font-family: 'Raleway', sans-serif;
+    font-size:small;
+    color:white;
+    display:block;
+    text-align: center;
+}
+
+nav a:hover, .nav a:hover{
+    font-weight: bolder;
+}
+
+.socialMedia{
+    cursor: pointer;
+    font-size: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    header .banner, .header .banner{
+        width: 70%;
+    }
+
+    header .logo, .header .logo{
+        width: 10%;
+    }
+    header .bannername, .header .bannername{
+        margin-left: 1%;
+    }
+
+    .menuContent{
+        width: 50%;
+        left: 50%;
+        top: 13%;
+        height: 87%;
+    }
+}
+
+@media only screen and (max-width: 768px) { /*iphone 12 PRO*/
+    header .bannername, .header .bannername{
+        visibility: hidden;
+    }
+    
+    header .logo, .header .logo{
+        width: 20%;
+    }
+
+    header p, .header p{
+        margin: 0%;
+    }
+
+    header .menuBtn, .header .menuBtn{
+        flex-direction: column-reverse;
+    }
+
+    .menuContent{
+        width: 100%;
+        top: 11%;
+        height: 89%;
+    }
+}

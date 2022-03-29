@@ -1,0 +1,81 @@
+.content{
+    background-color:white;
+    color: #D22C35;
+    height: fit-content;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 3%;
+}
+
+.content form{
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+}
+
+.content h3{
+    margin: 0%;
+}
+
+
+.loginBtn{
+    color: white;
+    background-color: #D22C35;
+    border: none;
+    margin-top:2%;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.loginBtn:hover{
+    background-color: #8A1C21;
+}
+
+@media only screen and (min-width: 768px){
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+    }
+
+    .loginInput{
+        margin-bottom: 2%;
+        width: fit-content;
+        padding: 1%;
+    }
+
+    .loginBtn{
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        padding-top: 20%;
+    }
+
+    .content form{
+        display: flex;
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        font-size: 90%;
+    }
+    
+    label[for="loginCheck"]{
+        font-size: 80%;
+    }
+
+    .loginBtn{
+        width: 96%;
+        padding: 2%;
+    }
+
+    .loginInput{
+        margin-bottom: 2%;
+        padding: 4%;
+        width: 90%;
+    }
+    
+    .loginBtn{
+        padding: 3%;
+    }
+}

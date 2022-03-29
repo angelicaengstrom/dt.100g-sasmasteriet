@@ -1,0 +1,271 @@
+.content{
+    background-color:white;
+    color: #D22C35;
+    height: fit-content;
+    padding: 3%;
+}
+
+.contentTitle{
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.createPostBtn, .newPostBtn{
+    background-color:#D22C35;
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.createPost{
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+
+.createPost h3{
+    margin-bottom: 0%;
+}
+
+.createPost p{
+    margin: 0%;
+    font-size: small;
+}
+
+.cancelPostBtn{
+    border: none;
+    color: white;
+    float: right;
+    font-size: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+.createPostInput{
+    width: 90%;
+    resize: none;
+    padding: 3%;
+}
+.createPostBtn{
+    width: 100%;
+    margin-top: 3%;
+}
+
+article{
+    margin-top: 2%;
+    display: flex;
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    width: 100%;
+}
+
+article h2, article h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+article h3{
+    color:black;
+}
+
+article h4{
+    color: black;
+}
+
+article pre{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+article a{
+    font-family: 'Raleway', sans-serif;
+    color: #22629C;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+article p{
+    font-family: 'Raleway', sans-serif;
+    color:grey;
+}
+
+button[name="deletePost"]{
+    float: right;
+}
+
+button[name="deletePost"], button[name="editPost"]{
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+
+article input[type="text"], article textarea{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100%;
+    color:gray;
+    font-style: italic;
+    resize: none;
+    padding: 3%;
+}
+
+article input[type="text"]:focus, article textarea:focus{
+    color: black;
+    font-style:normal;
+}
+
+@media only screen and (min-width: 768px){
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+    }
+
+    .newPostBtn{
+        padding: 1%;
+    }
+
+    .createPost{
+        background-color: white;
+        border: solid 2px #D22C35;
+        width: 20%;
+        margin-left: 35%;
+    }
+
+    .cancelPostBtn{
+        background-color: #D22C35;
+        border-radius: 2px;
+    }
+
+    .createPostBtn{
+        padding: 5%;
+    }
+
+    .createPostBtn:hover, .newPostBtn:hover, .cancelPostBtn:hover{
+        background-color: #8A1C21;
+    }
+
+    article img{
+        width: 20%;
+        height: 20%;
+        margin-right:2%;
+    }
+
+    button[name="deletePost"], button[name="editPost"]{
+        padding:1%;
+        background-color: #D22C35;
+    }
+
+    button[name="deletePost"]:hover, button[name="editPost"]:hover{
+        background-color: #8A1C21;
+    }
+
+    button[name="deletePost"]{
+        float: right;
+    }
+
+    article input[type="text"], article textarea{
+        width: 300%;
+    }
+}
+
+@media only screen and (max-width: 768px){ /*IPGONE 12 PRO*/
+    .content{
+        padding-top: 20%;
+    }
+    
+    .contentTitle{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .createPost{
+        color:white;
+        background-color: #22629C;
+        width: 94%;
+    }
+
+    .cancelPostBtn {
+        margin: 2%;
+        background-color: #22629c;
+    }
+
+    .newPostBtn{
+        width: 100%;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+
+    .createPostBtn{
+        padding: 3%;
+        background-color: #10304e;
+    }
+    
+    /**/
+    
+    article{
+        flex-direction: column;
+    }
+
+    article h2, article h3{
+        color:black;
+        margin: 0%;
+        font-size: 120%;
+        font-weight: 200;
+    }
+
+    article pre{
+        font-size: 80%;
+    }
+
+    article a{
+        font-size: 80%;
+        margin:0%;
+    }
+
+    article p{
+        font-size: 70%;
+        margin:0%;
+    }
+
+    article img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
+    button[name="deletePost"]{
+        padding:4%;
+        margin-left: 1%;
+        background-color: #10304e;
+    }
+
+    button[name="editPost"]{
+        width: 100%;
+        margin-top: 4%;
+        padding: 3%;
+        background-color: #10304e;
+    }
+    article input[type="text"], article textarea{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}

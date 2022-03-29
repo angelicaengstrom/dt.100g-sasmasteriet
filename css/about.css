@@ -1,0 +1,96 @@
+.content{
+    background-color:white;
+    color: #D22C35;
+    height: fit-content;
+    padding: 3%;
+}
+
+.content h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content pre{
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+.content textarea{
+    color:grey;
+    font-family: 'Josefin Sans', sans-serif;
+    resize: none;
+    font-size: 100%;
+}
+
+.content textarea:focus{
+    color:black;
+}
+
+.content button{
+    background-color:#D22C35;
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.content a{
+    color: #D22C35;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px){
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+    }
+
+    .content form{ 
+        display: flex;
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column;
+    }
+
+    .content textarea{
+        width: 50%;
+    }
+
+    .content button{
+        width: 25%;
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        padding-top: 20%;
+    }
+
+    .content h2{
+        text-align: center;
+    }
+
+    .content textarea{
+        width: 100%;
+    }
+
+    .content button{
+        font-size: 100%;
+        padding: 4%;
+        width: 100%;
+    }
+
+    .content input{
+        width: 92%;
+        padding: 4%;
+    }
+}
