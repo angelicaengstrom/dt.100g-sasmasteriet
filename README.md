@@ -12,6 +12,8 @@ användarvänlig. Därav är css anpassad för mobila användare, färgblinda oc
 Hemsidan finns ute på webben:
 http://studenter.miun.se/~anen1805/DT100G/project/
 
+Läs <i>Projektrapport.pdf</i> för utformningen av hemsidan.
+
 ## Hemsidan för mobila användare:
 <img width="200" alt="mobile_1" src="https://user-images.githubusercontent.com/78786414/161783048-d9de39c8-7e76-4efb-a5cd-96c6cce7ee15.png"> <img width="200" alt="mobile_2" src="https://user-images.githubusercontent.com/78786414/161783066-25b92a93-c803-4cea-b8c5-8d38acb5ff9c.png"><img width="200" alt="mobile_4" src="https://user-images.githubusercontent.com/78786414/161783083-ad2d090e-55e0-4dbf-bdfa-0ab61c5a31e7.png">
 
