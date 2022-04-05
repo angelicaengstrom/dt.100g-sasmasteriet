@@ -32,7 +32,7 @@ Hemsida till SÅS, Sundsvalls åverålsällskap
 
 <?php
     }
-    /* Om användaren tryckt på att byta lösenord */
+    /* Om användaren tryckt på att byta lösenord! */
     else if(isset($_GET['changePass'])){ ?>
 
     <!-- Inmatningsfält för att ändra lösenord -->
